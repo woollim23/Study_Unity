@@ -132,7 +132,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 37553569}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeaponPivot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48753777}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BulletSpawnPoint
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 1175347920}
   - component: {fileID: 1175347919}
   - component: {fileID: 1175347918}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Collision
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1034,7 +1034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1187987486}
   - component: {fileID: 1187987487}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: MainSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1119,7 +1119,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1409962240}
   - component: {fileID: 1409962239}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Grid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1167,14 +1167,14 @@ GameObject:
   m_Component:
   - component: {fileID: 1476777180}
   - component: {fileID: 1476777179}
-  - component: {fileID: 1476777178}
   - component: {fileID: 1476777177}
   - component: {fileID: 1476777176}
-  - component: {fileID: 1476777181}
+  - component: {fileID: 1476777178}
   - component: {fileID: 1476777182}
+  - component: {fileID: 1476777181}
   - component: {fileID: 1476777183}
   - component: {fileID: 1476777184}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1351,7 +1351,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 48753777}
-  TestPrefab: {fileID: 1707537854933702125, guid: bda29ecaf837a524daa0a56294486063, type: 3}
+  testPrefab: {fileID: 1707537854933702125, guid: bda29ecaf837a524daa0a56294486063, type: 3}
 --- !u!114 &1476777184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 1883895103}
   - component: {fileID: 1883895105}
   - component: {fileID: 1883895104}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: BackDeco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1501,7 +1501,7 @@ GameObject:
   - component: {fileID: 1984091754}
   - component: {fileID: 1984091756}
   - component: {fileID: 1984091755}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2832,7 +2832,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2000917628}
   - component: {fileID: 2000917629}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WeoponSprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2917,7 +2917,7 @@ GameObject:
   - component: {fileID: 2027756838}
   - component: {fileID: 2027756840}
   - component: {fileID: 2027756839}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: FrontDeco
   m_TagString: Untagged
   m_Icon: {fileID: 0}
