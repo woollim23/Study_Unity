@@ -4,8 +4,9 @@ using UnityEngine;
 public class PlayerInputController : TopDownController
 {
     private Camera _camera;
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake(); // 부모 클래스의 Awake 함수를 실행토록 함
         _camera = Camera.main; // 메인 카메라 라는 태그를 붙은 카메라를 가져온다
     }
 

@@ -1173,6 +1173,7 @@ GameObject:
   - component: {fileID: 1476777181}
   - component: {fileID: 1476777182}
   - component: {fileID: 1476777183}
+  - component: {fileID: 1476777184}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1189,7 +1190,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476777175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6b7b5c15919c854094bb8e31988f984, type: 3}
+  m_Script: {fileID: 11500000, guid: 88f2b12673d3ffb449fcaaefd3b19581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1476777177
@@ -1201,7 +1202,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476777175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30316cc6a4e1eb2429b207628c36f868, type: 3}
+  m_Script: {fileID: 11500000, guid: 903ce71227293a3469a996fbff251622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1476777178
@@ -1331,7 +1332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476777175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aed8935c9abfaec468c4ef362425490f, type: 3}
+  m_Script: {fileID: 11500000, guid: c863ee4925406894fac115f69056c9c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   armRenderer: {fileID: 2000917629}
@@ -1346,11 +1347,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 1476777175}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b47f499232985a4cbb16dbb1a0ca214, type: 3}
+  m_Script: {fileID: 11500000, guid: 3d21998fa58c91a40bd05de5c4400c68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   projectileSpawnPosition: {fileID: 48753777}
   TestPrefab: {fileID: 1707537854933702125, guid: bda29ecaf837a524daa0a56294486063, type: 3}
+--- !u!114 &1476777184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1476777175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8501e07505abbab47bdaca88dec2e7af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseStat:
+    statsChangeType: 2
+    maxHealth: 10
+    speed: 5
+    attackSO: {fileID: 11400000, guid: ffa9b8ef1ef58574d901c70ae6896a76, type: 2}
+  statModifiers: []
 --- !u!1 &1883895102
 GameObject:
   m_ObjectHideFlags: 0

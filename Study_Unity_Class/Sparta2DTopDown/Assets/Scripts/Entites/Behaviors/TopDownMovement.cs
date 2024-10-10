@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using Assets.Scripts.Stats;
+using UnityEngine;
 
 public class TopDownMovement : MonoBehaviour
 {
     // 실제로 이동이 일어날 컴포넌트
     private TopDownController movementController;
     private Rigidbody2D movementRigidbody;
+    private CharacterStatHandler characterStatHandler;
 
     private Vector2 movementDirection = Vector2.zero;
 
@@ -15,6 +17,7 @@ public class TopDownMovement : MonoBehaviour
         // 같은 게임오브젝트의 TopDownController, Rigidbody를 가져올 것 
         movementController = GetComponent<TopDownController>();
         movementRigidbody = GetComponent<Rigidbody2D>();
+        characterStatHandler = GetComponent<CharacterStatHandler>();
     }
 
     private void Start()
@@ -40,7 +43,7 @@ public class TopDownMovement : MonoBehaviour
 
     private void ApplyMovement(Vector2 direction)
     {
-        direction = direction * 5;
+        direction = direction * characterStatHandler.CurrentStat.speed;
 
         movementRigidbody.velocity = direction;
     }
