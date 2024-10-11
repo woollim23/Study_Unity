@@ -45,6 +45,8 @@ public class TopDownAimRotation : MonoBehaviour
         // 절대값이 90도 보다 크면 플립
         // 왼쪽 구간에 있으면 뒤집어라
 
+        armRenderer.flipY = characterRenderer.flipX;
+
         // [2. 팔 돌리기]
         // 팔을 돌릴 때는 나온 각도를 그대로 적용하는데, 이때 유니티 내부에서 사용하는 쿼터니언으로 변환한다.
         // 쿼터니으로 변형하는 방법 두 가지
