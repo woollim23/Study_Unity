@@ -52,9 +52,26 @@ public class ProjectileController : MonoBehaviour
         // _attackData.target에 포함되는 레이어인지 확인
         else if (IsLayerMatched(attackData.target.value, collision.gameObject.layer))
         {
-            // TODO : 데미지를 준다.
-            // 충돌한 지점에서 발사체를 파괴
+            HealthSystem healthSystem = collision.GetComponent<HealthSystem>();
+            if (healthSystem != null)
+            {
+                bool isAttackApplied = healthSystem.ChangeHealth(-attackData.power);
+
+                if(isAttackApplied && attackData.isOnKnockBack)
+                {
+                    ApplyKnockback(collision);
+                }
+            }
             DestroyProjectile(collision.ClosestPoint(transform.position), fxOnDestroy);
+        }
+    }
+
+    private void ApplyKnockback(Collider2D collision)
+    {
+        TopDownMovement movement = collision.GetComponent<TopDownMovement>();
+        if(movement != null)
+        {
+            movement.ApplyKnockback(transform, attackData.knockbackPower, attackData.knockbackTime);
         }
     }
 
