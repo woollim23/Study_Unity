@@ -4,7 +4,6 @@ public class Player : MonoBehaviour
 {
     public RuntimeAnimatorController[] animatorControllers;
     public Animator animator;
-    private string playerName;
 
     private void Awake()
     {
