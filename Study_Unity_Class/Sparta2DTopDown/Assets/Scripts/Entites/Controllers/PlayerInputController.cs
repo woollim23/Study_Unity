@@ -20,7 +20,7 @@ public class PlayerInputController : TopDownController
 
     public void OnLook(InputValue value) // W input 값 같은 애들이 여기로 들어온다
     {
-        // Debug.Log("OnLook" + value.ToString());
+        Debug.Log("OnLook" + value.ToString());
         Vector2 newAim = value.Get<Vector2>(); // 마우스 위치 이기 떄문에 normalized 하면 안된다.
         Vector2 worldPos = _camera.ScreenToWorldPoint(newAim);
         newAim = (worldPos - (Vector2)transform.position).normalized;
