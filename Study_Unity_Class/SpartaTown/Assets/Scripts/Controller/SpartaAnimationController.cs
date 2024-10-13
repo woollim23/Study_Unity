@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class SpartaAnimationController : AnimationController
 {
+    Player player;
     private static readonly int isWalking = Animator.StringToHash("isWalking");
     private static readonly int isHit = Animator.StringToHash("isHit");
     private static readonly int Attack = Animator.StringToHash("attack");
@@ -15,7 +16,7 @@ public class SpartaAnimationController : AnimationController
     protected override void Awake()
     {
         base.Awake();
-
+        player = GetComponent<Player>();
 
     }
 
@@ -26,6 +27,6 @@ public class SpartaAnimationController : AnimationController
 
     private void Move(Vector2 vector)
     {
-        animator.SetBool(isWalking, vector.magnitude > magnituteThreshold);
+        player.animator.SetBool(isWalking, vector.magnitude > magnituteThreshold);
     }
 }
