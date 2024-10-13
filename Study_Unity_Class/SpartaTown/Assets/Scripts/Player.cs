@@ -15,5 +15,10 @@ public class Player : MonoBehaviour
     {
         animator.runtimeAnimatorController = animatorControllers[GameManager.instance.playerId];
     }
+
+    public void ChangeAnimController()
+    {
+        animator.runtimeAnimatorController = animatorControllers[GameManager.instance.playerId];
+    }
 }
 
