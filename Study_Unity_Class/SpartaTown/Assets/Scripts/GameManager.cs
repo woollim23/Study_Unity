@@ -9,16 +9,27 @@ public class GameManager : MonoBehaviour
     public Player player;
     public int playerId;
 
+    private string playerName;
+
     private void Awake()
     {
         instance = this;
+        playerId = 0;
     }
 
-    public void GameStart(int id)
+    public void GameStart()
     {
-        playerId = id;
         player.gameObject.SetActive(true);
         
     }
 
+    public void SetId(int id)
+    {
+        playerId = id;
+    }
+
+    public void InputPlayerName(string name)
+    {
+        playerName = name;
+    }
 }
