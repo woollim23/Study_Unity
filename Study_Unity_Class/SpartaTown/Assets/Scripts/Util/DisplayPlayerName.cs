@@ -8,4 +8,9 @@ public class DisplayPlayerName : MonoBehaviour
     {
         playerNameDisplay.text = GameManager.instance.playerName;
     }
+
+    public void ChangeName()
+    {
+        playerNameDisplay.text = GameManager.instance.playerName;
+    }
 }
