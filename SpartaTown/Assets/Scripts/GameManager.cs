@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     public string playerName;
 
-    public Transform Player { get; private set; }
+    public Transform PlayerTransform { get; private set; } // 플레이어 transform
 
     private void Awake()
     {
@@ -26,7 +26,8 @@ public class GameManager : MonoBehaviour
     public void GameStart()
     {
         player.gameObject.SetActive(true);
-        Player = GameObject.FindGameObjectWithTag(playerTag).transform;
+        PlayerTransform = GameObject.FindGameObjectWithTag(playerTag).transform;
+        // 플레이어 태그를 검색하여, 플레이어 오브젝트를 찾고 transform값을 가져옴
     }
 
     public void SetId(int id)
